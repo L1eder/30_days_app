@@ -25,8 +25,18 @@ class TipAdapter(private val tips: List<Tip>) : RecyclerView.Adapter<TipAdapter.
         val tip = tips[position]
         holder.dayTextView.text = tip.day
         holder.shortAdviceTextView.text = tip.shortAdvice
-        holder.imageView.setImageResource(tip.imageResId) // Убедитесь, что у вас есть ресурс изображения
+        holder.imageView.setImageResource(tip.imageResId)
         holder.descriptionTextView.text = tip.description
+
+        holder.descriptionTextView.visibility = View.GONE
+
+        holder.imageView.setOnClickListener {
+            if (holder.descriptionTextView.visibility == View.GONE) {
+                holder.descriptionTextView.visibility = View.VISIBLE
+            } else {
+                holder.descriptionTextView.visibility = View.GONE
+            }
+        }
     }
 
     override fun getItemCount(): Int {

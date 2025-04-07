@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme._30DaysApp" parent="Base.Theme._30DaysApp" />
+
+    <style name="CustomFont">
+        <item name="android:fontFamily">@font/ttlimesslab_regular</item>
+    </style>
+
 </resources>
