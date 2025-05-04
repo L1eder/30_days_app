@@ -18,6 +18,6 @@ This is an Android application that provides users with interesting cooking tips
 
 ## App Functionality Preview
 
-Take a look at the GIF below to see the Photo Gallery app in action! 🌟
+Take a look at the GIF below to see the 30 Days App app in action! 🌟
 
 <img src="app/src/main/res/drawable/screen_recording.gif" alt="ScreenCast" width="400"/>
